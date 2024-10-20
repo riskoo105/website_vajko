@@ -18,17 +18,33 @@
         </nav>
     </header>
     <section>
-        <h2>Vyberte zariadenie a čas rezervácie</h2>
+        <h2>Vyplňte formulár pre rezerváciu</h2>
         <form action="#" method="post">
+            <label for="first-name">Meno:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Vaše meno" required>
+            
+            <label for="last-name">Priezvisko:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Vaše priezvisko" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Váš email" required>
+            
+            <label for="phone">Telefónne číslo:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Váš telefón" required>
+            
             <label for="facility">Zariadenie:</label>
-            <select id="facility" name="facility">
+            <select id="facility" name="facility" required>
+                <option value="" disabled selected>Vyberte zariadenie</option>
                 <option value="football">Futbalové ihrisko</option>
                 <option value="tennis">Tenisový kurt</option>
                 <option value="basketball">Basketbalové ihrisko</option>
             </select>
     
-            <label for="time">Čas rezervácie:</label>
-            <input type="datetime-local" id="time" name="time">
+            <label for="start-time">Čas začiatku rezervácie:</label>
+            <input type="datetime-local" id="start-time" name="start-time" required>
+    
+            <label for="end-time">Čas konca rezervácie:</label>
+            <input type="datetime-local" id="end-time" name="end-time" required>
     
             <button type="submit">Rezervovať</button>
         </form>
