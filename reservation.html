@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rezervácia</title>
+</head>
+<body>
+    <header>
+        <h1>Vytvorenie rezervácie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="facilities.html">Zariadenia</a></li>
+                <li><a href="reservation.html" class="active">Rezervácia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Vyberte zariadenie a čas rezervácie</h2>
+        <form action="#" method="post">
+            <label for="facility">Zariadenie:</label>
+            <select id="facility" name="facility">
+                <option value="football">Futbalové ihrisko</option>
+                <option value="tennis">Tenisový kurt</option>
+                <option value="basketball">Basketbalové ihrisko</option>
+            </select>
+    
+            <label for="time">Čas rezervácie:</label>
+            <input type="datetime-local" id="time" name="time">
+    
+            <button type="submit">Rezervovať</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Rezervačný systém pre športové zariadenia</p>
+    </footer>
+</body>
+</html>
